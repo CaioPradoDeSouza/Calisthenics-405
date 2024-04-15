@@ -14,20 +14,19 @@
 
 body{
     background-color: rgba(0, 0, 0, 0.877);
-    width: 100vw;
-    height: 100%;
+
 }
 
 .header{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 150px;
     background-color: black;
 }
 
 .header-content{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     justify-content: space-between;
 }
@@ -106,7 +105,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 100vw;
+    max-width: 100%;
     height: 150px;
     background-color: rgba(0, 0, 0, 0.692);
 }
@@ -141,17 +140,18 @@ body{
 }
 
 .main-images{
-    width: 100vw;
+    width: 95%;
     height: fit-content;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 5px;
 }
 
 .main-images img{
-    width: 90%;
+    width: 100%;
     height: 280px;
     border-radius: 5px;
     margin-left: 15px;
@@ -164,6 +164,10 @@ body{
 }
 
 @media (max-width:450px){
+
+    *{
+        transform: none;
+    }
     
     .header {
         width: 100vw;
@@ -191,6 +195,9 @@ body{
     .hat-header a{
         font-size: 14px;
         color: #fff;
+    }
+
+    .hat-header a:hover{
         
     }
 
