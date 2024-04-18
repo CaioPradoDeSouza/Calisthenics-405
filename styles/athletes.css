@@ -15,7 +15,7 @@
 }
 
 body{
-    width: 95vw;
+    width: 98vw;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@ body{
     background-color: black;
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    margin: 15px;
 
 }
 
@@ -53,6 +53,7 @@ body{
 
 .athletes-h1 h1{
     margin: 20px;
+    padding: 15px;
 }
 
 .athletes-h1 h1:hover{
@@ -63,6 +64,7 @@ body{
 
 .athletes-h1 h3{
     margin-bottom: 30px;
+    
 }
 
 .athletes-h1 h3:hover{
@@ -95,6 +97,7 @@ body{
 .athlete-card h3{
     padding: 10px;
     font-size: 25px;
+    margin: 10px;
 }
 
 .athlete-card h3:hover{
@@ -127,4 +130,10 @@ body{
 
 .social-media i:hover{
     color: purple;
+}
+
+@media (max-width:450px){
+    .athletes-cards{
+        grid-template-columns: 1fr;
+    }
 }
